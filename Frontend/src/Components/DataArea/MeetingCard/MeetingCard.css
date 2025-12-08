@@ -1,0 +1,73 @@
+.MeetingCard {
+    border-radius: 10px;
+    padding: 16px;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #fff;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px; /* Optional: ensure enough height */
+    position: relative;
+}
+
+.MeetingCard:hover {
+    transform: scale(1.02);
+}
+
+.MeetingCard.done {
+    background-color: #888;
+}
+
+.MeetingCard.ongoing {
+    background-color: #ff9800;
+}
+
+.MeetingCard.upcoming {
+    background-color: #4caf50;
+}
+
+.meeting-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.meeting-time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95em;
+    margin-bottom: 12px;
+    opacity: 0.9;
+}
+
+.meeting-body {
+    font-size: 0.95em;
+    line-height: 1.4em;
+    flex-grow: 1;
+    position: relative;
+    padding-bottom: 32px; /* space for button */
+}
+
+/* Style the ❌ button */
+.meeting-body button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 8px;
+    background-color: rgba(255, 255, 255, 0.15); /* match the card but visible */
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 4px 8px;
+    transition: background-color 0.2s;
+}
+
+.meeting-body button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}

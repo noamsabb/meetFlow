@@ -1,0 +1,20 @@
+.Home {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #e8f0fe, #f1f8ff);
+  color: #003366;
+}
+
+.Home h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.Home p {
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #333;
+  line-height: 1.6;
+}
