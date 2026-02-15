@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 type MeetingCardProps = {
   meeting: MeetingModel;
   status: "done" | "ongoing" | "upcoming";
+  onMeetingDeleted?: () => Promise<void>;
 };
 
 export function MeetingCard(props: MeetingCardProps) {
